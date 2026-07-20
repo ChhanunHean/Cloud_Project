@@ -8,8 +8,8 @@ exec > /var/log/user-data.log 2>&1
 echo "🚀 Starting KeypKey backend setup..."
 
 # Install Node.js 20
-curl -fsSL https://rpm.nodesource.com/setup_20.x | bash -
-yum install -y nodejs git
+curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+apt-get install -y nodejs git
 
 # Clone or pull the backend
 cd /home/ec2-user
