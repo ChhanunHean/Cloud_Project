@@ -12,7 +12,7 @@ curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
 apt-get install -y nodejs git
 
 # Clone or pull the backend
-cd /home/ec2-user
+/home/ubuntu
 # We clone the repo into 'app'
 git clone https://github.com/ChhanunHean/Cloud_Project.git app || true
 cd app
@@ -34,7 +34,7 @@ VAULT_SECRET=${vault_secret}
 FRONTEND_URL=${frontend_url}
 ENVEOF
 
-echo "✅ .env written with RDS config"
+echo " .env written with RDS config"
 
 # Install PM2 to keep Node.js running
 npm install -g pm2
@@ -43,7 +43,7 @@ npm install -g pm2
 npm install
 pm2 delete server || true
 pm2 start server.js --name "server"
-pm2 startup systemd -u ec2-user --hp /home/ec2-user
+pm2 startup systemd -u ubuntu --hp /home/ubuntu
 pm2 save
 
-echo "✅ KeypKey backend is running on port 3000!"
+echo " KeypKey backend is running on port 3000!"
