@@ -5,14 +5,14 @@
 set -e
 exec > /var/log/user-data.log 2>&1
 
-echo "🚀 Starting KeypKey backend setup..."
+echo " Starting KeypKey backend setup..."
 
 # Install Node.js 20
 curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
 apt-get install -y nodejs git
 
 # Clone or pull the backend
-/home/ubuntu
+cd /home/ubuntu
 # We clone the repo into 'app'
 git clone https://github.com/ChhanunHean/Cloud_Project.git app || true
 cd app
