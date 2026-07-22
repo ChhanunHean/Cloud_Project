@@ -1,4 +1,4 @@
-# KeypKey Cloud Infrastructure 🔐
+# KeypKey Cloud Infrastructure 
 
 > A secure, scalable, and highly available password manager deployed on AWS using Terraform (Infrastructure as Code) and version-controlled on GitHub.
 
@@ -37,10 +37,10 @@
 
 ## Live Endpoints
 
-* 🔗 **Frontend Web App:** [S3 Website URL](http://keypkey-frontend-e98ebcc1.s3-website-ap-southeast-1.amazonaws.com/)
-* ⚙️ **Backend API:** [ALB API DNS URL](http://keypkey-alb-1353945873.ap-southeast-1.elb.amazonaws.com/)
-* 🗄️ **Database Instance:** `keypkey-mysql.cheea42m407n.ap-southeast-1.rds.amazonaws.com`
-* 📊 **Metrics Dashboard:** [CloudWatch Dashboard Link](https://console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#dashboards/dashboard/keypkey-dashboard)
+*  **Frontend Web App:** [S3 Website URL](http://keypkey-frontend-e98ebcc1.s3-website-ap-southeast-1.amazonaws.com/)
+*  **Backend API:** [ALB API DNS URL](http://keypkey-alb-1353945873.ap-southeast-1.elb.amazonaws.com/)
+*  **Database Instance:** `keypkey-mysql.cheea42m407n.ap-southeast-1.rds.amazonaws.com`
+*  **Metrics Dashboard:** [CloudWatch Dashboard Link](https://console.aws.amazon.com/cloudwatch/home?region=ap-southeast-1#dashboards/dashboard/keypkey-dashboard)
 
 ---
 
@@ -74,7 +74,7 @@ terraform apply
 
 ---
 
-## 🛠️ Management & Operations Guide
+## Management & Operations Guide
 
 ### A. How to Manage the Private Database (SSH Tunneling)
 Because the RDS instance is locked inside private subnets, open an SSH tunnel from your local Mac to access it through DBeaver or TablePlus:
